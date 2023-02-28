@@ -7,22 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music</title>
   <style>
-    /* html {
-      margin: 0;
-    }
-
-    body {
-      text-align: center;
-      font-family: sans-serif;
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    section {
-           margin: 0;border-bottom: 1rem white solid;
- padding: 1rem 0 1rem 0;
-      background-color: antiquewhite;
-    } */
     #messages {
       position: fixed;
       top: 0;
@@ -30,6 +14,7 @@
       background-color: bisque;
       width: 100%;
     }
+
     * {
       margin: 0;
       padding: 0;
@@ -132,7 +117,6 @@
     #messages {
       display: none
     }
-
   </style>
   <script>
     const songs = {
@@ -140,29 +124,27 @@
       song: [{
           artist: 'Ludwig van Beethoven',
           title: 'Für Elise',
-          videos: [
-            {
+          videos: [{
               channel: 'Amosdoll Music',
               video: 'aw37rJfaAt0'
             },
             {
               channel: 'HDpiano',
-            video: '5wMC7XzLyoQ'
+              video: '5wMC7XzLyoQ'
             },
             {
               channel: 'Pianote',
-            video: '4rs4IYUoI1Y'
+              video: '4rs4IYUoI1Y'
             }
-         ]
+          ]
         },
         {
           artist: 'Undertale',
           title: 'Fallen Down',
-          videos: [
-            {
+          videos: [{
               channel: 'Amosdoll Music',
               video: 'qCxhV8fIpiE'
-            },            
+            },
             {
               channel: 'KeyTuts',
               video: 'hgn4P3NAE3Q'
@@ -171,386 +153,359 @@
               channel: 'PHianonize',
               video: '_j59ipNJD9w'
             }
-         ]
+          ]
         },
         {
           artist: 'Jamie Duffy',
           title: 'Solas',
-          videos: [
-          {
-              channel: 'Amosdoll Music',
-              video: 'oXuBopofJfc'
-          }
-          ]
+          videos: [{
+            channel: 'Amosdoll Music',
+            video: 'oXuBopofJfc'
+          }]
         },
         {
           artist: 'John Carpenter',
           title: 'Michael Myers (Halloween)',
-          videos: [
-            {
-                channel: 'Amosdoll Music',
-                video: 'wRZRJZj1PHM'
+          videos: [{
+              channel: 'Amosdoll Music',
+              video: 'wRZRJZj1PHM'
             },
             {
-                channel: 'HDpiano',
-                video: 'UC9wAhqB8ms'
+              channel: 'HDpiano',
+              video: 'UC9wAhqB8ms'
             },
             {
-                channel: 'Pianote',
-                video: 'K_FCZwniVIM'
+              channel: 'Pianote',
+              video: 'K_FCZwniVIM'
             }
           ]
         },
         {
           artist: 'Michael Giacchino',
           title: 'Married Life (Up)',
-          videos: [
-            {
-                channel: 'Amosdoll Music',
-                video: 'KI7Rx8FrTIg'
-            }
-          ]
+          videos: [{
+            channel: 'Amosdoll Music',
+            video: 'KI7Rx8FrTIg'
+          }]
         },
         {
           artist: 'Coldplay',
           title: 'Clocks',
-          videos: [
-            {
-                channel: 'Amosdoll Music',
-                video: 'KQ9CXx4VJPY'
+          videos: [{
+              channel: 'Amosdoll Music',
+              video: 'KQ9CXx4VJPY'
             },
             {
-                channel: 'HDpiano',
-                video: 'zqjjto9wgzs'
+              channel: 'HDpiano',
+              video: 'zqjjto9wgzs'
             },
             {
-                channel: 'Pianote',
-                video: '2lr1iTU8GRE'
+              channel: 'Pianote',
+              video: '2lr1iTU8GRE'
             },
             {
-                channel: 'Katherine Cordova *',
-                video: 'BFZgaov-uo0'
+              channel: 'Katherine Cordova *',
+              video: 'BFZgaov-uo0'
             }
           ]
         },
         {
           artist: 'Coldplay',
           title: 'A Sky Full Of Stars',
-          videos: [
+          videos: [{
+              channel: 'Amosdoll Music',
+              video: 'kgNntYB4pDA'
+            },
             {
-                channel: 'Amosdoll Music',
-                video: 'kgNntYB4pDA'
-            },            
-            {
-                channel: 'HDpiano',
-                video: '9Msa-v1bsTM'
+              channel: 'HDpiano',
+              video: '9Msa-v1bsTM'
             }
           ]
         },
         {
           artist: 'Queen',
           title: 'Bohemian Rhapsody',
-          videos: [
-            {
-                channel: 'Amosdoll Music',
-                video: '22RB01W1DHY'
+          videos: [{
+              channel: 'Amosdoll Music',
+              video: '22RB01W1DHY'
             },
             {
-                channel: 'HDpiano',
-                video: '7faAsNZxJfQ'
+              channel: 'HDpiano',
+              video: '7faAsNZxJfQ'
             },
             {
-                channel: 'Pianote',
-                video: 'HLB28rTqNTw'
+              channel: 'Pianote',
+              video: 'HLB28rTqNTw'
             }
           ]
         },
         {
           artist: 'Klaus Badelt',
           title: "He's a Pirate",
-          videos: [
-            {
-                channel: 'Amosdoll Music',
-                video: 'vDtkbyqO64I'
-            }
-          ]
+          videos: [{
+            channel: 'Amosdoll Music',
+            video: 'vDtkbyqO64I'
+          }]
         },
         {
           artist: 'JS Bach',
           title: 'Goldberg - Aria',
-          videos: [
-            {
-                channel: 'OpenGoldBerg',
-                video: 'tZKuusGv7Ps'
+          videos: [{
+              channel: 'OpenGoldBerg',
+              video: 'tZKuusGv7Ps'
             },
-                        {
-                channel: 'Paul Barton',
-                video: '64NWDOzDtIY'
+            {
+              channel: 'Paul Barton',
+              video: '64NWDOzDtIY'
             }
           ]
         },
         {
           artist: 'Ludovico Einaudi',
           title: 'I Giorni',
-          videos: [
-            {
-                channel: 'HDpiano',
-                video: 'A67wSqrzOp8'
+          videos: [{
+              channel: 'HDpiano',
+              video: 'A67wSqrzOp8'
             },
             {
-                channel: "Leuvre",
-                video: 'LkH3nW8hFtI'
-            },    
+              channel: "Leuvre",
+              video: 'LkH3nW8hFtI'
+            },
             {
-                channel: "Michael Maiber (part 1)",
-                video: "cRoRNPs5jLk"
+              channel: "Michael Maiber (part 1)",
+              video: "cRoRNPs5jLk"
             }
           ]
         },
         {
           artist: 'Yann Tiersen',
           title: "Amelie (Theme)",
-          videos: [
-            {
-                channel: "HDpiano",
-                video: "aZKFnYMCLq4"
+          videos: [{
+              channel: "HDpiano",
+              video: "aZKFnYMCLq4"
             },
             {
-                channel: "Klavier Lernen",
-                video: "2FZGQ76RbK4"
-            },            
+              channel: "Klavier Lernen",
+              video: "2FZGQ76RbK4"
+            },
             {
-                channel: 'Pianote',
-                video: 'O6Au1Qd-zN0'
+              channel: 'Pianote',
+              video: 'O6Au1Qd-zN0'
             }
           ]
         },
         {
           artist: 'Ludovico Einaudi',
           title: 'Nuvole Bianche',
-          videos: [
-            {
-                channel: 'Marioverehrer',
-                video: "U4J7QJVueqA"
+          videos: [{
+              channel: 'Marioverehrer',
+              video: "U4J7QJVueqA"
             },
             {
-                channel: "Marks Piano - PGN Piano",
-                video: 'U-xbNfixRc0'
+              channel: "Marks Piano - PGN Piano",
+              video: 'U-xbNfixRc0'
             },
             {
-                channel: "Pianote",
-                video: 'arGMigLuS0U'
+              channel: "Pianote",
+              video: 'arGMigLuS0U'
             }
           ]
         },
         {
           artist: 'George Michael',
           title: "Careless Whisper",
-          videos: [
-            {
-                channel: "Amosdoll Music",
-                video: "xK4RlsqgOc4"
+          videos: [{
+              channel: "Amosdoll Music",
+              video: "xK4RlsqgOc4"
             },
             {
-                channel: "Marks Piano - PGN Piano",
-                video: "fVp2e24j8AM"
+              channel: "Marks Piano - PGN Piano",
+              video: "fVp2e24j8AM"
             }
           ]
         },
         {
           artist: "Kanye West",
           title: "Runaway",
-          videos: [
-            {
-                channel: "Amosdoll Music",
-                video: "qxJ4Jqg1P_0"
+          videos: [{
+              channel: "Amosdoll Music",
+              video: "qxJ4Jqg1P_0"
             },
             {
-                channel: "PHianonize",
-                video: "Gj3owdZRGPI"
+              channel: "PHianonize",
+              video: "Gj3owdZRGPI"
             }
           ]
         },
         {
           artist: "Cyndi Lauper",
           title: "True Colors",
-          videos: [
-            {
-                channel: "Amosdoll Music",
-                video: "DePBbMYV6G0"
+          videos: [{
+              channel: "Amosdoll Music",
+              video: "DePBbMYV6G0"
             },
             {
-                channel: "HDPiano",
-                video: "ncnBipKqUnI"
+              channel: "HDPiano",
+              video: "ncnBipKqUnI"
             },
             {
-                channel: "Paul Hankinson Tutorials *",
-                video: "5ZKjOHgt4aU"
+              channel: "Paul Hankinson Tutorials *",
+              video: "5ZKjOHgt4aU"
             },
             {
-                channel: "Piano Go Life",
-                video: "bYWqQOwcBM4"
+              channel: "Piano Go Life",
+              video: "bYWqQOwcBM4"
             },
             {
-                channel: "Playground Sessions",
-                video: "6I23XfNEnFM"
+              channel: "Playground Sessions",
+              video: "6I23XfNEnFM"
             }
           ]
         },
         {
           artist: "Beethoven",
           title: "5th Symphony",
-          videos: [
-            {
-                channel: "Amosdoll Music",
-                video: "Wdj4yngCSLA"
+          videos: [{
+              channel: "Amosdoll Music",
+              video: "Wdj4yngCSLA"
             },
             {
-                channel: "PHianonize 1",
-                video: "6UOeW80aPtY"
+              channel: "PHianonize 1",
+              video: "6UOeW80aPtY"
             },
             {
-                channel: "PHianonize 2",
-                video: "DVsKz8IrfOU"
+              channel: "PHianonize 2",
+              video: "DVsKz8IrfOU"
             }
           ]
         },
         {
           artist: "Yiruma",
           title: "River Flows in You",
-          videos: [
-            {
-                channel: "HDpiano",
-                video: "FGwrEZxywc0"
+          videos: [{
+              channel: "HDpiano",
+              video: "FGwrEZxywc0"
             },
             {
-                channel: "Marks Piano - PGN Piano",
-                video: "0zp5mC4vHHc"
+              channel: "Marks Piano - PGN Piano",
+              video: "0zp5mC4vHHc"
             },
             {
-                channel: "PHianonize",
-                video: "w7mole4Cfak"
+              channel: "PHianonize",
+              video: "w7mole4Cfak"
             },
             {
-                channel: "Pianote",
-                video: "jWifCal6LxI"
+              channel: "Pianote",
+              video: "jWifCal6LxI"
             }
           ]
         },
         {
           artist: 'Patrick Watson',
           title: 'Je te laisserai des mots',
-          videos: [
-            {
-                channel: 'Bitesize Piano',
-                video: '7AXyh4_D2TQ'
+          videos: [{
+              channel: 'Bitesize Piano',
+              video: '7AXyh4_D2TQ'
             },
             {
-                channel: 'EasyPiano',
-                video: '-RzknCfpwS4'
+              channel: 'EasyPiano',
+              video: '-RzknCfpwS4'
             },
             {
-                channel: 'PHianonize',
-                video: 'N6rCMUVH1Jc'
+              channel: 'PHianonize',
+              video: 'N6rCMUVH1Jc'
             },
-            
+
             {
-                channel: 'Piano Pop Tv *',
-                video: 'ig_CMrb4l6Y'
+              channel: 'Piano Pop Tv *',
+              video: 'ig_CMrb4l6Y'
             }
           ]
         },
         {
           artist: 'JVKE',
           title: 'Golden Hour',
-          videos: [
-            {
-                channel: 'Amosdoll Music',
-                video: 'xYrpjtvFf0Q'
+          videos: [{
+              channel: 'Amosdoll Music',
+              video: 'xYrpjtvFf0Q'
             },
             {
-                channel: 'Bitesize Piano **',
-                video: '4W8LArCv5ac'
+              channel: 'Bitesize Piano **',
+              video: '4W8LArCv5ac'
             },
             {
-                channel: 'PHianonize',
-                video: 'pAqmjs79BXg'
+              channel: 'PHianonize',
+              video: 'pAqmjs79BXg'
             },
             {
-                channel: 'Piano Pop TV',
-                video: 'ahCj8aOeNt4'
+              channel: 'Piano Pop TV',
+              video: 'ahCj8aOeNt4'
             }
           ]
         },
         {
           artist: 'Ludwig van Beethoven',
           title: 'Moonlight Sonata (1st Movement)',
-          videos: [
-            {
-                  channel: 'PHianonize',
-                  video: 'HOIrOjrioEs'
+          videos: [{
+              channel: 'PHianonize',
+              video: 'HOIrOjrioEs'
             },
             {
-                  channel: 'Rousseau',
-                  video: 'sbTVZMJ9Z2I'
+              channel: 'Rousseau',
+              video: 'sbTVZMJ9Z2I'
             }
           ]
         },
         {
           artist: 'Victoria',
           title: 'RUSH E',
-          videos: [
-            {
-                channel: 'PHianonize  (easy)',
-                video: 'Doiz1d7UKFE'
+          videos: [{
+              channel: 'PHianonize  (easy)',
+              video: 'Doiz1d7UKFE'
             },
             {
-                channel: 'PHianonize (intermediate)',
-                video: 'LHQwxKhkulc'
+              channel: 'PHianonize (intermediate)',
+              video: 'LHQwxKhkulc'
             }
           ]
         },
         {
           artist: 'Dr. Dre',
           title: 'Still Dre',
-          videos: [
+          videos: [{
+              channel: 'Lionel Yu Performances',
+              video: 'j5LzEASx4YM'
+            },
             {
-                channel: 'Lionel Yu Performances',
-                video: 'j5LzEASx4YM'
-            }, 
-            {
-                channel: 'Piano Music',
-                video: 'hJ7a6gfWDqg'
+              channel: 'Piano Music',
+              video: 'hJ7a6gfWDqg'
             }
           ]
         },
         {
           artist: 'Robert Miles',
           title: 'Children',
-          videos: [
+          videos: [{
+              channel: 'David Hetz',
+              video: 'mktdwIH9DfA'
+            },
             {
-                channel: 'David Hetz',
-                video: 'mktdwIH9DfA'
-            }, 
+              channel: 'HDpiano',
+              video: 'Wsl_vkljHJ8'
+            },
             {
-                channel: 'HDpiano',
-                video: 'Wsl_vkljHJ8'
-            }, 
-            {
-                channel: 'inFamous *',
-                video: 'AtJHJb42v04'
+              channel: 'inFamous *',
+              video: 'AtJHJb42v04'
             }
           ]
         },
         {
           artist: 'Coldplay',
           title: 'Fix You',
-          videos: [ 
-            {
-                channel: 'Katherine Cordova',
-                video: '0cD2Yrf_2pk'
-            }
-          ]
+          videos: [{
+            channel: 'Katherine Cordova',
+            video: '0cD2Yrf_2pk'
+          }]
         }
       ]
     }
@@ -558,39 +513,12 @@
 </head>
 
 <body>
-  <!-- <section>
-    <h2>Jamie Duffy - Solas (Piano Tutorial)</h2>
-    <iframe width="448" height="272" 
-    src="https://www.youtube.com/embed/VtQmkMTLWxw">
-    </iframe>
-  </section>
- -->
   <div id="messages">Messages</div>
   <header id="header" class="header"></header>
-  <!-- <article id="song100">
-    <header>
-    <p class="artist">Artist</p>
-    <p class="title">Title</p>
-    </header>
-    <section class="videos">
-      <ul>
-        <li>Video</li>
-        <li>Video</li>
-        <li>Video</li>
-        <li>Video</li>
-        <li>Video</li>
-        <li>Video</li>
-      </ul>
-    </section>
-    <section class="video">
-     <iframe class = "video" id="video" width="336" height="204" frameborder="0"
-      src="https://www.youtube.com/embed/VtQmkMTLWxw">
-    </iframe>
-    </section>
-  </article> -->
-  <iframe class = "video" id="video" width="336" height="204" frameborder="0">
+
+  <iframe class="video" id="video" width="336" height="204" frameborder="0">
     src=""
-</iframe>
+  </iframe>
   <script>
     const messages = document.getElementById("messages")
     const video = document.getElementById("video")
@@ -604,8 +532,8 @@
     for (let s = 0; s < songs.song.length; s++) {
       let header = document.createElement("header")
       let article = document.createElement("article")
-      var artist = document.createElement("p")
-      var title = document.createElement("p")
+      let artist = document.createElement("p")
+      let title = document.createElement("p")
       artist.className = "artist"
       title.className = "title"
       artist.innerHTML = songs.song[s].artist
@@ -621,10 +549,10 @@
         let ul = document.createElement("ul")
         for (let v = 0; v < songs.song[s].videos.length; v++) {
           let li = document.createElement("li")
-          li.id = songs.song[s].videos[v].video         
+          li.id = songs.song[s].videos[v].video
           li.innerHTML = songs.song[s].videos[v].channel
           li.addEventListener("click", videoClickedListener)
-          ul.appendChild(li) 
+          ul.appendChild(li)
         }
         section.appendChild(ul)
         article.appendChild(section)
@@ -638,12 +566,9 @@
 
 
     function songClickedListener(event) {
-      // messages.innerText = event.currentTarget.id
-      // console.log(event.target.id)
-      // console.log(event.target)
-      var s = document.getElementById(event.currentTarget.id)
-      var v = s.nextSibling
-      if( songLast == null ) {
+      let s = document.getElementById(event.currentTarget.id)
+      let v = s.nextSibling
+      if (songLast == null) {
         v.classList.toggle('hide')
         v.classList.toggle('open')
         s.classList.toggle('open')
@@ -651,12 +576,12 @@
         songParentLast = s
         return
       }
-      if( songLast == v ) {
+      if (songLast == v) {
         v.classList.toggle('hide')
         s.classList.toggle('open')
         return
       }
-      if( songLast != v ) {
+      if (songLast != v) {
         v.classList.toggle('hide')
         s.classList.toggle('open')
         songLast.classList.add('hide')
@@ -665,36 +590,13 @@
         songParentLast = s
         return
       }
-      // if( songLast != null ) { 
-      //   songLast.classList.toggle('hide')
-      // }
-      // if( songLast == v ) {
-      //   //v.classList.toggle('hide')
-      // }
-      // songLast = v
     }
 
     function videoClickedListener(event) {
-      ///messages.innerText = event.target.innerHTML + " " + event.target.id
-      video.src="https://www.youtube.com/embed/" + event.target.id
-      var element = document.getElementById(event.target.id)
-      // element.appendChild(video)
+      video.src = "https://www.youtube.com/embed/" + event.target.id
+      let element = document.getElementById(event.target.id)
       element.parentNode.insertBefore(video, element.nextSibling)
       video.style.display = 'inherit'
-      //console.log(video.src)
-      // var iframe = document.createElement("iframe")
-      // iframe.id = "iframeVideo"
-      // iframe.width = "336"
-      // iframe.height = "204"
-      // iframe.frameBorder = "0"
-      // var video = document.createElement("video")
-      // video.src="https://www.youtube.com/embed/" + event.target.id
-      // iframe.appendChild(video)
-      // var element = document.getElementById(event.target.id)
-      // element.parentNode.insertBefore(iframe, element.nextSibling);
-      // var s = document.getElementById(event.target.id)
-      // var v = s.querySelector('section')
-      // v.classList.toggle('hide')
     }
   </script>
 </body>
